@@ -3,10 +3,11 @@ body {
     color: var(--head-color);
 }
 
-/* Прибирає сині/фіолетові посилання.*/
-a, a:hover, a:focus, a:active {
+/* Прибирає сині/фіолетові посилання. */
+a, a:hover, a:focus {
     text-decoration: none;
     color: inherit;
+    
 }
 
 
@@ -36,19 +37,29 @@ letter-spacing: 0.03em;
 color: var(--accent-color);
 }
 
+.header-logo:hover, .header-logo:focus {
+color: var(--accent-color);
+}
+
 .header-logo-sep {
     color: var(--logo-blk-color);
 }
 
+
+
 .header-link {
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--head-color);
 }
 
-.header-link:hover,
-.header-link:focus {
+.header-link :focus {
+    color: var(--accent-color)
+}
+
+.header-link :hover {
     color: var(--accent-color);
 }
 
@@ -103,10 +114,14 @@ letter-spacing: 0.06em;
 cursor:pointer;
 }
 
-.hero-btn:focus,
+.hero-btn:focus {
+    background-color: var(--accent-color);
+    color: var(--main-light-color);
+}
+
 .hero-btn:hover {
     background-color: var(--accent-color);
-    color: #FFFFFF;
+    color: var(--main-light-color);
 }
 
 .section-1-title {
@@ -167,11 +182,13 @@ color: var(--text-color);
 }
 
 .filter-btn {
-font-weight: 500;
-font-size: 16px;
-line-height: 1.62;
-text-align: center;
-letter-spacing: 0.03em;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
 cursor:pointer;
 }
 
@@ -212,6 +229,11 @@ letter-spacing: 0.03em;
 color: var(--accent-color);
 }
 
+.footer-logo:hover, .footer-logo:focus {
+    color: var(--accent-color);
+    }
+    
+
 .footer-logo-sep {
     color: var(--main-light-color);
 }
@@ -221,14 +243,19 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
+font-style: normal;
 color: var(--main-light-color);
 }
 
-.footer-mail, 
-.footer-tel {
+.footer-location:hover, .footer-location:focus {
+    color: var(--main-light-color);
+}
+
+.footer-mail, .footer-tel {
 font-weight: 400;
 font-size: 14px;
-line-height: 24px;
+line-height: 1.71;
+font-style: normal;
 letter-spacing: 0.03em;
 color: var(--footer-contact-color);
 }
